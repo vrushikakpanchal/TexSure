@@ -206,7 +206,7 @@ if page == "🔍 Try Our Model":
             analyze_with_cnn(img)
 
     elif mode == "🖼️ Upload from Gallery":
-        uploaded = st.file_uploader("Upload a Fabric Image", type=["jpg", "jpeg", "png"])
+        uploaded = st.file_uploader("Upload a Fabric Image", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
         if uploaded is not None:
             img = Image.open(uploaded).convert("RGB")
             st.image(img, caption="Uploaded Image")
