@@ -2,9 +2,9 @@ streamlit==1.40.1
 pandas
 numpy
 Pillow
-torch
-torchvision
-ultralytics
+torch==2.1.0
+torchvision==0.16.0
+ultralytics==8.0.230
 matplotlib
 scikit-learn
-opencv-python-headless
+opencv-python-headless==4.7.0.72
