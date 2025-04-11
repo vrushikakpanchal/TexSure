@@ -175,7 +175,7 @@ if page == "🏠 Home":
         """, unsafe_allow_html=True)
 
     with col2:
-        st.image(IMG_PATH, use_container_width=True)
+        st.image(IMG_PATH)
 
 # Try Model
 if page == "🔍 Try Our Model":
@@ -201,7 +201,7 @@ if page == "🔍 Try Our Model":
         if img_file is not None:
             img = Image.open(img_file).convert("RGB")
             img_np = np.array(img)
-            st.image(img, caption="Captured Image", use_container_width=True)
+            st.image(img, caption="Captured Image")
             analyze_and_display_yolo(img_np, filename=img_file.name)
             analyze_with_cnn(img)
 
@@ -209,7 +209,7 @@ if page == "🔍 Try Our Model":
         uploaded = st.file_uploader("Upload a Fabric Image", type=["jpg", "jpeg", "png"])
         if uploaded is not None:
             img = Image.open(uploaded).convert("RGB")
-            st.image(img, caption="Uploaded Image", use_container_width=True)
+            st.image(img, caption="Uploaded Image")
             img_np = np.array(img)
             analyze_and_display_yolo(img_np, filename=uploaded.name)
             analyze_with_cnn(img)

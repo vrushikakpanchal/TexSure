@@ -1,11 +1,10 @@
-streamlit
+streamlit==1.31.1
 pandas
 numpy
-opencv-python
+opencv-python-headless
 Pillow
 torch
+torchvision
 ultralytics
 matplotlib
 scikit-learn
-torchvision
-opencv-python-headless
